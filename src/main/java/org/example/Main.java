@@ -18,7 +18,7 @@ public class Main {
         System.out.println();
 
         System.out.println("Прямоугольник 3:");
-        System.out.println("Площадь: " + rectangle3.getArea());
-        System.out.println("Периметр: " + rectangle3.getPerimeter());
+        System.out.printf("Площадь: %.2f%n", rectangle3.getArea());
+        System.out.printf("Периметр: %.2f%n", rectangle3.getPerimeter());
     }
 }
