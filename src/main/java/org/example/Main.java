@@ -2,23 +2,24 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
+        Circle circle1 = new Circle();
+        System.out.println("Circle 1:");
+        System.out.println(circle1.toString());
+        System.out.println();
+
 
         Rectangle rectangle1 = new Rectangle();
-        Rectangle rectangle2 = new Rectangle(4,40);
-        Rectangle rectangle3 = new Rectangle(3.5, 35.9);
-
-        System.out.println("Прямоугольник 1:");
-        System.out.println("Площадь: " + rectangle1.getArea());
-        System.out.println("Периметр: " + rectangle1.getPerimeter());
+        System.out.println("Rectangle 1:");
+        System.out.println(rectangle1.toString());
         System.out.println();
 
-        System.out.println("Прямоугольник 2:");
-        System.out.println("Площадь: " + rectangle2.getArea());
-        System.out.println("Периметр: " + rectangle2.getPerimeter());
+        GeometricObject myShape;
+
+        myShape = new Circle(5.0, "red", true);
+        System.out.println(myShape.toString());
         System.out.println();
 
-        System.out.println("Прямоугольник 3:");
-        System.out.printf("Площадь: %.2f%n", rectangle3.getArea());
-        System.out.printf("Периметр: %.2f%n", rectangle3.getPerimeter());
+        myShape = new Rectangle(2.0, 3.0, "yellow", true);
+        System.out.println(myShape.toString());
     }
 }
