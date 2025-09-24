@@ -1,7 +1,9 @@
 package org.example;
+import java.io.Console;
 
 public class Main {
     public static void main(String[] args) {
+
         Circle circle1 = new Circle();
         System.out.println("Circle 1:");
         System.out.println(circle1.toString());
